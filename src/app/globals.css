@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-manifest text-ink font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+  :focus-visible {
+    outline: 2px solid theme("colors.signal.DEFAULT");
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  /* Manifest-stamp style eyebrow label used above section headings */
+  .manifest-eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em]
+      text-signal border border-signal/40 rounded-sm px-3 py-1;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .section-pad {
+    @apply py-16 md:py-24;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3
+      font-body text-sm font-semibold tracking-wide transition-all duration-200;
+  }
+  .btn-primary {
+    @apply btn bg-signal text-white hover:bg-signal-dark hover:shadow-lg active:scale-[0.98];
+  }
+  .btn-outline {
+    @apply btn border border-harbor/30 text-harbor hover:bg-harbor hover:text-white hover:border-harbor active:scale-[0.98];
+  }
+  .btn-dark {
+    @apply btn border border-harbor/30 text-harbor hover:bg-harbor hover:text-white active:scale-[0.98];
+  }
+
+  /* Subtle lift used on interactive cards throughout the site */
+  .card-interactive {
+    @apply transition-all duration-200 hover:-translate-y-1 hover:shadow-lg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Trade-route signature line: dashed path drawn on load, with a moving cargo marker */
+.route-line-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: route-draw 2.4s ease-out forwards;
+}
+
+.route-marker {
+  offset-path: path("M 0 40 C 200 -10, 400 90, 700 40 S 1100 -10, 1400 40");
+  animation: marker-move 3.2s ease-in-out 0.3s forwards;
+}

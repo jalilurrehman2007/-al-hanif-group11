@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Fleet & Road Transport",
+    "image": "/images/gallery/fleet-road-transport.jpeg"
+  },
+  {
+    "label": "Air Cargo Handling",
+    "image": "/images/gallery/air-cargo-handling.jpeg"
+  },
+  {
+    "label": "Port & Sea Freight",
+    "image": "/images/gallery/port-sea-freight.jpeg"
+  },
+  {
+    "label": "Warehouse Operations",
+    "image": "/images/gallery/warehouse-operations.jpeg"
+  },
+  {
+    "label": "Customs Documentation",
+    "image": "/images/gallery/customs-documentation.png"
+  },
+  {
+    "label": "Packing & Crating",
+    "image": "/images/gallery/packing-crating.jpeg"
+  }
+]
