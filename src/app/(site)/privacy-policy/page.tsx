@@ -11,10 +11,6 @@ export default function PrivacyPolicyPage() {
     <section className="section-pad bg-white pt-32">
       <div className="container-page max-w-3xl">
         <h1 className="font-display text-4xl text-harbor mb-6">Privacy Policy</h1>
-        <p className="text-sm text-ink/50 font-mono mb-8">
-          [PLACEHOLDER] — this is a generic template. Have it reviewed by legal counsel before publishing.
-        </p>
-
         <div className="space-y-6 text-ink/70 leading-relaxed">
           <p>
             {site.legalName} ("we", "us") collects information you provide

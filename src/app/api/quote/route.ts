@@ -2,13 +2,14 @@ import { NextResponse } from "next/server";
 
 // This runs on the server only — the access key below never reaches the
 // browser. Set WEB3FORMS_ACCESS_KEY in your environment (.env.local for
-// local dev, Vercel's Environment Variables for production). Note this is
+// local dev, Netlify's Environment Variables for production). Note this is
 // a plain server variable, NOT prefixed with NEXT_PUBLIC_ — that prefix is
 // what would leak it into client-side JavaScript.
 const ACCESS_KEY = process.env.WEB3FORMS_ACCESS_KEY;
 
 export async function POST(request: Request) {
   if (!ACCESS_KEY) {
+    console.error("[/api/quote] WEB3FORMS_ACCESS_KEY is not set in the environment.");
     return NextResponse.json(
       { success: false, message: "Form is not configured yet. Set WEB3FORMS_ACCESS_KEY on the server." },
       { status: 500 }
@@ -41,17 +42,29 @@ export async function POST(request: Request) {
       }),
     });
 
-    const data = await res.json();
+    const text = await res.text();
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      console.error("[/api/quote] Web3Forms did not return JSON. Raw response:", text.slice(0, 500));
+      return NextResponse.json(
+        { success: false, message: "Unexpected response from the email service." },
+        { status: 502 }
+      );
+    }
 
     if (!data.success) {
+      console.error("[/api/quote] Web3Forms rejected the submission:", data);
       return NextResponse.json(
-        { success: false, message: "Submission failed. Please try again." },
+        { success: false, message: data.message || "Submission failed. Please try again." },
         { status: 502 }
       );
     }
 
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (err) {
+    console.error("[/api/quote] Unexpected error:", err);
     return NextResponse.json(
       { success: false, message: "Something went wrong. Please try again." },
       { status: 500 }

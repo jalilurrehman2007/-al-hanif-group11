@@ -15,6 +15,12 @@ const serviceOptions = [
   "Other",
 ];
 
+// Web3Forms access keys are meant to be used directly from the browser —
+// that's how the service works (like Formspree). It's not a secret key in
+// the way a payment API key is; Web3Forms verifies submissions by key +
+// domain, not by keeping the key hidden.
+const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+
 export default function QuoteForm({ dark = false }: { dark?: boolean }) {
   const [state, setState] = useState<FormState>("idle");
   const [error, setError] = useState("");
@@ -26,8 +32,6 @@ export default function QuoteForm({ dark = false }: { dark?: boolean }) {
     const form = new FormData(e.currentTarget);
     const name = String(form.get("name") || "").trim();
     const email = String(form.get("email") || "").trim();
-    const phone = String(form.get("phone") || "").trim();
-    const service = String(form.get("service") || "").trim();
     const message = String(form.get("message") || "").trim();
 
     if (!name || !email || !message) {
@@ -38,14 +42,21 @@ export default function QuoteForm({ dark = false }: { dark?: boolean }) {
       setError("Please enter a valid email address.");
       return;
     }
+    if (!ACCESS_KEY) {
+      setError("Form is not configured yet. Set NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY.");
+      return;
+    }
 
     setState("submitting");
 
+    form.append("access_key", ACCESS_KEY);
+    form.append("subject", "New quote request — website enquiry");
+    form.append("from_name", "Website Quote Form");
+
     try {
-      const res = await fetch("/api/quote", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, service, message }),
+        body: form,
       });
       const data = await res.json();
       if (data.success) {
@@ -93,7 +104,7 @@ export default function QuoteForm({ dark = false }: { dark?: boolean }) {
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="space-y-1.5">
           <label htmlFor="phone" className={labelClass}>Phone</label>
-          <input id="phone" name="phone" type="tel" className={fieldClass} placeholder="+971 ..." />
+          <input id="phone" name="phone" type="tel" className={fieldClass} placeholder="+92 ..." />
         </div>
         <div className="space-y-1.5">
           <label htmlFor="service" className={labelClass}>Service needed</label>
