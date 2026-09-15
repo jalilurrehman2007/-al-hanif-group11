@@ -13,7 +13,7 @@ export const site = {
   contact: {
     phoneDisplay: "+92 21 32435384-85",
     phoneHref: "tel:+922132435384",
-    whatsappHref: "https://wa.me/+971 58 693 1130",
+    whatsappHref: "https://wa.me/+971586931130",
     email: "khalil_hanif@hotmail.com",
     addressLine: "505, 5th Floor, Trade Avenue, Hasrat Mohani Road, Karachi, Pakistan",
   },
