@@ -9,7 +9,7 @@ import { services } from "@/data/services";
 
 const announcements = [
   "Free quote within 24 hours",
-  "Clearing, forwarding & logistics from Karachi, Pakistan",
+  "logistics all over world",
   "One team — sourcing to final delivery",
 ];
 
@@ -50,9 +50,9 @@ export default function Header() {
           <a href={site.contact.phoneHref} className="hover:text-white/80 transition-colors">
             {site.contact.phoneDisplay}
           </a>
-          <a href={`mailto:${site.contact.email}`} className="hover:text-white/80 transition-colors">
-            {site.contact.email}
-          </a>
+          <a href={`mailto:${site.contact.emails[0]}`} className="hover:text-white/80 transition-colors">
+              {site.contact.emails.join(" / ")}
+            </a>
         </div>
       </div>
 

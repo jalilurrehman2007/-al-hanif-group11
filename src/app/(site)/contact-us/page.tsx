@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 
 const details = [
   { label: "Phone", value: site.contact.phoneDisplay, href: site.contact.phoneHref },
-  { label: "Email", value: site.contact.email, href: `mailto:${site.contact.email}` },
   { label: "Address", value: site.contact.addressLine, href: undefined },
 ];
 
@@ -48,6 +47,17 @@ export default function ContactPage() {
                   )}
                 </li>
               ))}
+              <li>
+              <p className="text-xs font-mono uppercase tracking-wider text-signal">Email</p>
+              {site.contact.emails.map((email) => (
+              <li key={email}>
+              <a href={`mailto:${email}`} className="hover:text-signal transition-colors">
+              {email}
+             </a>
+            </li>
+            ))}
+              
+            </li>
             </ul>
           </div>
 

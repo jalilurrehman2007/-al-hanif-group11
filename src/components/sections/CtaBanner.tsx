@@ -17,7 +17,17 @@ export default function CtaBanner() {
           </p>
           <div className="mt-8 font-mono text-sm text-ink/70 space-y-1">
             <p>Call us: <a href={site.contact.phoneHref} className="text-harbor hover:text-signal transition-colors">{site.contact.phoneDisplay}</a></p>
-            <p>Email us: <a href={`mailto:${site.contact.email}`} className="text-harbor hover:text-signal transition-colors">{site.contact.email}</a></p>
+            <p>
+              Email us:{" "}
+              {site.contact.emails.map((email, i) => (
+                <span key={email}>
+                  <a href={`mailto:${email}`} className="text-harbor hover:text-signal transition-colors">
+                    {email}
+                  </a>
+                  {i < site.contact.emails.length - 1 && ", "}
+                </span>
+              ))}
+            </p>
           </div>
         </div>
 

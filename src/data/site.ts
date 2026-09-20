@@ -6,15 +6,15 @@
 export const site = {
   name: "Alhanif Group",
   legalName: "Alhanif Group (formerly Khalil Hanif Impex)",
-  tagline: "Four Generations of Clearing, Forwarding & Logistics",
+  tagline: "Four Generations of Logistics",
   foundedYear: "1971",
-  domain: "https://www.alhanifgroup.example", // [PLACEHOLDER] set once you have a real domain
+  domain: "https://www.alhanifgroup.com", // [PLACEHOLDER] set once you have a real domain
 
   contact: {
-    phoneDisplay: "+92 21 32435384-85",
+    phoneDisplay: "+92 2132435384",
     phoneHref: "tel:+922132435384",
-    whatsappHref: "https://wa.me/+971586931130",
-    email: "khalil_hanif@hotmail.com",
+    whatsappHref: "https://wa.me/971586931130",
+    emails: ["info.khimpex@alhanifgroup.com", "info.jktranstrade@alhanifgroup.com"],
     addressLine: "505, 5th Floor, Trade Avenue, Hasrat Mohani Road, Karachi, Pakistan",
   },
 

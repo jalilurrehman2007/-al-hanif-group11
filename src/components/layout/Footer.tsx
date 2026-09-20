@@ -82,11 +82,13 @@ export default function Footer() {
                 {site.contact.phoneDisplay}
               </a>
             </li>
-            <li>
-              <a href={`mailto:${site.contact.email}`} className="hover:text-signal transition-colors">
-                {site.contact.email}
-              </a>
-            </li>
+            {site.contact.emails.map((email) => (
+  <li key={email}>
+    <a href={`mailto:${email}`} className="hover:text-signal transition-colors">
+      {email}
+    </a>
+  </li>
+))}
           </ul>
         </div>
       </div>

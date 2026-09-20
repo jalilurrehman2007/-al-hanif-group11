@@ -9,7 +9,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Alhanif Group is a privately owned clearing, forwarding, and logistics company based in Karachi, Pakistan, carrying a family legacy that spans four generations.",
+    "Alhanif Group is a privately owned logistics company based in Karachi, Pakistan, carrying a family legacy that spans four generations.",
 };
 
 const values = [
@@ -28,9 +28,7 @@ export default function AboutPage() {
             A family trade, four generations in the making
           </h1>
           <p className="mt-5 text-ink/70 max-w-xl leading-relaxed">
-            Alhanif Group is a privately owned clearing, forwarding, and
-            logistics company headquartered in Karachi, Pakistan — built on
-            a family legacy that goes back more than fifty years.
+          Alhanif Group is a privately owned logistics company based in Karachi, Pakistan, carrying a family legacy that spans four generations — home to two daughter companies, JK Transtrade and Khalil Hanif Impex.
           </p>
         </div>
       </section>
@@ -43,7 +41,7 @@ export default function AboutPage() {
               title="A one-stop shop, run by people who know the trade"
             />
             <p className="text-ink/70 leading-relaxed">
-              We provide clearing and forwarding, logistics, transportation,
+              We provide logistics, transportation,
               and commission agent services to mid- and large-scale clients
               — customs clearance for local and transit cargo, delivery
               within Karachi, import and export documentation, cargo

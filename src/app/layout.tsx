@@ -63,7 +63,7 @@ const organizationSchema = {
   url: site.domain,
   logo: `${site.domain}/images/logo.png`,
   telephone: site.contact.phoneDisplay,
-  email: site.contact.email,
+  email: site.contact.emails[0],
   foundingDate: site.foundedYear,
   address: {
     "@type": "PostalAddress",
