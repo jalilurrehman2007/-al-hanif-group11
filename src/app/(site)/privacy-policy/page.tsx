@@ -27,8 +27,8 @@ export default function PrivacyPolicyPage() {
           <h2 className="font-display text-2xl text-harbor mt-8">Contact</h2>
           <p>
             Questions about this policy can be directed to{" "}
-            <a href={`mailto:${site.contact.email}`} className="text-route">
-              {site.contact.email}
+            <a href={`mailto:${site.contact.emails[0]}`} className="text-route">
+              {site.contact.emails[0]}
             </a>.
           </p>
         </div>
