@@ -19,7 +19,7 @@ export default function ServicesGrid({
         <SectionHeading
           eyebrow="What We Do"
           title="Solutions built for every stage of the shipment"
-          description="From finding the right supplier to clearing the last customs point, each service connects directly into the next."
+          description="From finding the right supplier , each service connects directly into the next."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

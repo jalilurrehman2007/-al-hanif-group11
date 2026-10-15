@@ -43,8 +43,7 @@ export default function AboutPage() {
             <p className="text-ink/70 leading-relaxed">
               We provide logistics, transportation,
               and commission agent services to mid- and large-scale clients
-              — customs clearance for local and transit cargo, delivery
-              within Karachi, import and export documentation, cargo
+              —  delivery,import and export documentation, cargo
               consolidation, and booking and shipping to and from the local
               port.
             </p>

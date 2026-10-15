@@ -7,7 +7,7 @@ import blogImages from "@/data/blog-images.json";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Logistics notes on freight, customs, sourcing, and warehousing from Alhanif Group.",
+  description: "Logistics notes on freight,sourcing, and warehousing from Alhanif Group.",
 };
 
 export default function BlogIndexPage() {

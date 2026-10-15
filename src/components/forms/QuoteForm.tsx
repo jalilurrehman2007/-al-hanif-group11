@@ -9,7 +9,6 @@ const serviceOptions = [
   "Sea Freight",
   "Land Transportation",
   "Warehousing & Storage",
-  "Customs Clearance",
   "Sourcing Agent Services",
   "Transloading",
   "Other",

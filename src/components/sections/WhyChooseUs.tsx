@@ -7,9 +7,9 @@ const reasons = [
     detail: "Milestone tracking shared as cargo clears each leg of the route.",
   },
   {
-    stat: "12",
+    stat: "10",
     title: "Services, One Team",
-    detail: "Sourcing, freight, customs, and delivery under a single point of contact.",
+    detail: "Sourcing, freight, and delivery under a single point of contact.",
   },
   {
     stat: "50+",

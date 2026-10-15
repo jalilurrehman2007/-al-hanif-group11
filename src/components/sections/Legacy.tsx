@@ -8,7 +8,6 @@ const services2000 = [
   "Freight Forwarding",
   "Sea Freight",
   "Air Freight",
-  "Customs & Clearance Coordination",
   "Import & Export Services",
   "Trade Documentation",
   "Banking & Trade Documentation Support",

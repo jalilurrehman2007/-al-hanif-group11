@@ -23,19 +23,6 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "customs-documents-checklist",
-    title: "The Documents That Actually Delay Customs Clearance",
-    date: "2026-06-14",
-    category: "Customs",
-    excerpt:
-      "Most clearance delays trace back to a small handful of recurring documentation mismatches — not obscure regulatory surprises.",
-    body: [
-      "When a shipment sits at a customs point longer than expected, the cause is rarely an unusual regulation. It's usually a mismatch between the commercial invoice, packing list, and the declared HS code — details that are easy to overlook when documents are prepared in a hurry.",
-      "Certificates of origin, especially for goods qualifying under preferential trade agreements, are another common gap: missing legalisation or an expired certificate can hold a shipment even when everything else is correct.",
-      "Building a pre-clearance document review into the shipping process, before cargo departs origin, catches these mismatches while there's still time to correct them.",
-    ],
-  },
-  {
     slug: "sourcing-agent-role-explained",
     title: "What a Sourcing Agent Actually Does Before Cargo Ships",
     date: "2026-06-28",

@@ -6,15 +6,15 @@ export default function Hero() {
     <section className="relative bg-horizon-gradient overflow-hidden">
       <div className="container-page relative z-10 pt-20 pb-28 md:pt-28 md:pb-36">
         <span className="manifest-eyebrow border-signal/50 text-signal">
-          Clearing, Forwarding &amp; Logistics — Karachi, Pakistan
+           Logistics — ALL OVER THE WORLD
         </span>
 
         <h1 className="mt-6 max-w-3xl font-display italic text-harbor text-4xl sm:text-5xl md:text-6xl leading-[1.08] animate-fade-up">
-          Four generations of cargo moved right, from Karachi to the world.
+            Moving Cargo Worldwide for Four Generations.
         </h1>
 
         <p className="mt-6 max-w-xl text-ink/70 text-base md:text-lg leading-relaxed">
-          Customs clearance, freight, transportation, and documentation —
+           freight, transportation, and documentation —
           coordinated by one family-run team with over fifty years of
           combined experience.
         </p>

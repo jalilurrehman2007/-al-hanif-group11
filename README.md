@@ -105,7 +105,7 @@ easy to find and search for:
 ## Content already filled in (edit freely)
 
 - 12 services in `src/data/services.ts`, including the four you asked to
-  add specifically: **Customs Clearance**, **Sourcing Agent Services**,
+  add specifically:  **Sourcing Agent Services**,
   **Documentation & Compliance**, and **Transloading Services** — plus
   the standard freight-forwarder set (air/sea/land freight, door-to-door,
   warehousing, packing, courier, vehicle & truck services).

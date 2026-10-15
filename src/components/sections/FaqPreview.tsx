@@ -11,7 +11,7 @@ export default function FaqPreview() {
           <SectionHeading
             eyebrow="Help & Support"
             title="Frequently asked questions"
-            description="Clear answers on how shipments, sourcing, and clearance work with us."
+            description="Clear answers on how shipments, sourcing work with us."
           />
           <Button href="/faq" variant="dark">View All FAQs</Button>
         </div>

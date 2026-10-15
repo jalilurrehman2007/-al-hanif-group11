@@ -28,19 +28,19 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(site.domain),
   title: {
-    default: `${site.name} | Clearing, Forwarding & Logistics — Karachi, Pakistan`,
+    default: `${site.name} |  Logistics — All over the world`,
     template: `%s | ${site.name}`,
   },
   description:
-    "Alhanif Group is a family-run clearing, forwarding, transportation, and logistics company in Karachi, Pakistan, with a legacy spanning four generations.",
+    "Alhanif Group is a family-run-transportation, and logistics company in Karachi, Pakistan, with a legacy spanning four generations.",
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title: `${site.name} | Clearing, Forwarding & Logistics`,
+    title: `${site.name} | Logistics`,
     description:
-      "Customs clearance, freight, transportation, and documentation from Karachi, Pakistan — a family legacy spanning four generations.",
+      "freight, transportation, and documentation from Karachi, Pakistan — a family legacy spanning four generations.",
     url: site.domain,
     siteName: site.name,
     locale: "en_US",
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} | Clearing, Forwarding & Logistics`,
+    title: `${site.name} | Logistics`,
     description:
-      "Customs clearance, freight, transportation, and documentation from Karachi, Pakistan — a family legacy spanning four generations.",
+      "freight, transportation, and documentation from Karachi, Pakistan — a family legacy spanning four generations.",
     images: ["/images/logo.png"],
   },
 };

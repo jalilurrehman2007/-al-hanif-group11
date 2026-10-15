@@ -6,7 +6,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Air, sea, and land freight, customs clearance, sourcing agent services, warehousing, transloading, and more — all under one logistics partner.",
+    "Air, sea, and land freight,sourcing agent services, warehousing, transloading, and more — all under one logistics partner.",
 };
 
 export default function ServicesPage() {

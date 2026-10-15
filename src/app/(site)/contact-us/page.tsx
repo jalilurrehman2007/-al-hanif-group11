@@ -6,7 +6,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Alhanif Group for a freight, customs clearance, sourcing, or warehousing quote.",
+    "Get in touch with Alhanif Group for a freight,sourcing, or warehousing quote.",
 };
 
 const details = [

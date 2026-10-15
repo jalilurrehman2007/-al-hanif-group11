@@ -51,18 +51,18 @@ export const services: Service[] = [
       { title: "Space Allocation", detail: "We reserve container space with carriers matched to your transit-time and budget needs." },
       { title: "Port Coordination", detail: "Loading, stuffing, and vessel documentation are managed at origin port." },
       { title: "Ocean Transit", detail: "Shipment status is monitored across each transhipment leg." },
-      { title: "Destination Handling", detail: "We arrange discharge, clearance, and onward transport at the receiving port." },
+      { title: "Destination Handling", detail: "We arrange discharge,and onward transport at the receiving port." },
     ],
   },
   {
     slug: "land-transportation",
     name: "Land Transportation Services",
     shortDescription:
-      "Scheduled and on-demand road freight linking the UAE with GCC markets by truck.",
-    heroLine: "The GCC's roads, worked like a routine, not a gamble.",
+      "Scheduled and on-demand road freight .",
+    heroLine: "worked like a routine, not a gamble.",
     icon: "truck",
     overview:
-      "Our road freight fleet moves palletized and bulk cargo between the UAE, Saudi Arabia, Oman, and neighbouring markets on fixed schedules, with flexible options for urgent or oversized loads.",
+      "Our road freight fleet moves palletized and bulk cargo  with flexible options for urgent or oversized loads.",
     capabilities: [
       "Full Truckload (FTL) and groupage services",
       "Cross-border GCC corridor scheduling",
@@ -80,15 +80,14 @@ export const services: Service[] = [
     slug: "door-to-door-logistics",
     name: "Door-to-Door Logistics Solutions",
     shortDescription:
-      "One point of contact managing pickup, transit, clearance, and final delivery end to end.",
+      "One point of contact managing pickup, transit,and final delivery end to end.",
     heroLine: "One handover, one team, one shipment tracked start to finish.",
     icon: "route",
     overview:
-      "For clients who want a single accountable partner, our door-to-door service combines air, sea, or land transport with customs clearance and last-mile delivery under one coordinated plan — removing the need to manage multiple vendors across a shipment's journey.",
+      "For clients who want a single accountable partner, our door-to-door service combines air, sea, or land transport and last-mile delivery under one coordinated plan — removing the need to manage multiple vendors across a shipment's journey.",
     capabilities: [
       "Single point of contact across the full route",
       "Mode selection based on cost, speed, and cargo type",
-      "Customs clearance bundled into the delivery plan",
       "Consolidated invoicing for the entire shipment",
     ],
     process: [
@@ -102,14 +101,13 @@ export const services: Service[] = [
     slug: "warehousing-storage",
     name: "Warehousing & Storage Services",
     shortDescription:
-      "Short and long-term storage with inventory visibility across UAE facilities.",
+      "Short and long-term storage with inventory visibility ",
     heroLine: "Storage that fits the shipment schedule, not the other way round.",
     icon: "warehouse",
     overview:
       "Our storage network offers flexible short-term and contracted long-term space, with inventory handling suited to palletized goods, bonded cargo, and time-sensitive stock awaiting onward distribution.",
     capabilities: [
       "Short-term and long-term contracted storage",
-      "Bonded storage for goods pending customs clearance",
       "Inventory receipt, put-away, and pick-pack support",
       "Flexible scaling for seasonal stock volumes",
     ],
@@ -120,28 +118,7 @@ export const services: Service[] = [
       { title: "Onward Dispatch", detail: "Goods are handed to the next leg of transport or final delivery." },
     ],
   },
-  {
-    slug: "customs-clearance",
-    name: "Customs Clearance Services",
-    shortDescription:
-      "Import and export clearance handled by brokers who know UAE and GCC customs procedure.",
-    heroLine: "The paperwork that decides whether cargo moves — or waits.",
-    icon: "stamp",
-    overview:
-      "Our brokerage desk prepares and lodges the declarations, permits, and duty assessments required to move cargo through UAE and GCC customs points, reducing the delays that come from incomplete or mismatched documentation.",
-    capabilities: [
-      "Import and export customs declarations",
-      "HS code classification and duty assessment",
-      "Permit and licensing coordination for restricted goods",
-      "Bonded and free-zone clearance handling",
-    ],
-    process: [
-      { title: "Pre-Clearance Review", detail: "Documentation is checked against destination customs requirements before the shipment arrives." },
-      { title: "Declaration Filing", detail: "We lodge the customs declaration and coordinate any required permits." },
-      { title: "Inspection Support", detail: "If cargo is selected for inspection, our team liaises directly with the customs point." },
-      { title: "Release & Handover", detail: "Cleared cargo is released and handed to onward transport without delay." },
-    ],
-  },
+
   {
     slug: "sourcing-agent",
     name: "Sourcing Agent Services",
@@ -161,7 +138,7 @@ export const services: Service[] = [
       { title: "Requirement Briefing", detail: "We confirm the product spec, target price range, and supplier criteria." },
       { title: "Supplier Sourcing", detail: "Candidate suppliers are identified and screened against the brief." },
       { title: "Negotiation & Ordering", detail: "Terms are negotiated and the purchase order placed on the client's behalf." },
-      { title: "Inspection & Handoff", detail: "Goods are inspected before shipment and passed into our freight and clearance services." },
+      { title: "Inspection & Handoff", detail: "Goods are inspected before shipment and passed into our freight." },
     ],
   },
   {
@@ -228,28 +205,6 @@ export const services: Service[] = [
       { title: "Materials & Build", detail: "Crating or palletizing is built to export specification." },
       { title: "Labelling", detail: "Packages are labelled with handling instructions and shipment references." },
       { title: "Handover to Freight", detail: "Packed cargo moves directly into the selected transport service." },
-    ],
-  },
-  {
-    slug: "document-forwarding",
-    name: "Document Forwarding Services",
-    shortDescription:
-      "Accurate preparation and secure handling of trade documents, coordinated directly with banks and trade partners.",
-    heroLine: "Where trade finance and paperwork have to line up exactly.",
-    icon: "file",
-    overview:
-      "We provide comprehensive trade documentation services, ensuring the accurate preparation, verification, and secure handling of import and export documents. Our team coordinates with banks and trade partners to facilitate the smooth processing of Letters of Credit (L/C), documentary collections, and other international trade documentation with efficiency and confidentiality.",
-    capabilities: [
-      "Letter of Credit (L/C) document preparation and verification",
-      "Documentary collection handling",
-      "Bank and trade partner coordination",
-      "Secure, confidential handling of original trade documents",
-    ],
-    process: [
-      { title: "Document Intake", detail: "We collect and review the trade documents against the underlying sale and shipping terms." },
-      { title: "Verification", detail: "Documents are checked for compliance with L/C terms or collection instructions before submission." },
-      { title: "Bank Coordination", detail: "We liaise directly with the relevant banks to process and forward documentation." },
-      { title: "Secure Handover", detail: "Original documents are securely handled and delivered to the receiving party." },
     ],
   },
 ];

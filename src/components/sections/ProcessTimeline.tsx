@@ -3,8 +3,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 const steps = [
   { n: "01", title: "Source & Confirm", detail: "We identify suppliers or confirm your cargo details and destination requirements." },
   { n: "02", title: "Document & Book", detail: "Documentation is prepared and space booked across the right transport mode." },
-  { n: "03", title: "Clear & Transit", detail: "Customs formalities are handled while cargo moves along its route." },
-  { n: "04", title: "Deliver & Confirm", detail: "Cargo reaches its destination with proof of delivery returned to you." },
+  { n: "03", title: "Deliver & Confirm", detail: "Cargo reaches its destination with proof of delivery returned to you." },
 ];
 
 export default function ProcessTimeline() {

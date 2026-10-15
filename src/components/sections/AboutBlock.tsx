@@ -7,7 +7,6 @@ const highlights = [
   { title: "Air Freight", detail: "Priority handling for time-critical shipments." },
   { title: "Sea Freight", detail: "Dependable container shipping to global markets." },
   { title: "Sourcing Agents", detail: "Supplier vetting before cargo ever ships." },
-  { title: "Customs Clearance", detail: "Documentation checked before it becomes a delay." },
 ];
 
 export default function AboutBlock() {
@@ -39,11 +38,11 @@ export default function AboutBlock() {
         <div>
           <span className="manifest-eyebrow">Who We Are</span>
           <h2 className="mt-4 text-3xl md:text-4xl font-display text-harbor leading-tight">
-            A family-run clearing &amp; forwarding company, four generations strong
+            A family-run &amp; company, four generations strong
           </h2>
           <p className="mt-5 text-ink/70 leading-relaxed">
             {site.name} is a privately owned company providing top-notch
-            clearing and forwarding, logistics, and transportation
+             logistics, and transportation
             solutions from Karachi, Pakistan — powered by a team with over
             fifty years of combined industry experience, and a family
             legacy that goes back even further.

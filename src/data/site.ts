@@ -11,10 +11,11 @@ export const site = {
   domain: "https://www.alhanifgroup.com", // [PLACEHOLDER] set once you have a real domain
 
   contact: {
-    phoneDisplay: "+92 2132435384",
+    phoneDisplay: "02134962281",
     phoneHref: "tel:+922132435384",
     whatsappHref: "https://wa.me/971586931130",
     emails: ["info.khimpex@alhanifgroup.com", "info.jktranstrade@alhanifgroup.com"],
+    email: "info.khimpex@alhanifgroup.com", // added
     addressLine: "505, 5th Floor, Trade Avenue, Hasrat Mohani Road, Karachi, Pakistan",
   },
 
