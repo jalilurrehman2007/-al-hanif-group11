@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://www.alhanifgroup.example/sitemap.xml
+Sitemap: https://www.alhanifgroup.com/sitemap.xml
