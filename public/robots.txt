@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /api/
+allow: /admin/
+allow: /api/
 
 Sitemap: https://www.alhanifgroup.com/sitemap.xml
