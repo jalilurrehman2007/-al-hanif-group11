@@ -20,11 +20,10 @@ export const site = {
   },
 
   social: {
-    facebook: "#", // [PLACEHOLDER]
-    instagram: "#", // [PLACEHOLDER]
+    facebook: "https://www.facebook.com/share/19Y12REv85/?mibextid=wwXIfr", // [PLACEHOLDER]
+    instagram: "https://www.instagram.com/jk.trans.trade?rpxt=cGtsNGkyczM1MHJ4&utm_source=qr", // [PLACEHOLDER]
     linkedin: "#", // [PLACEHOLDER]
     x: "#", // [PLACEHOLDER]
-    youtube: "#", // [PLACEHOLDER]
   },
 
   nav: [

@@ -24,7 +24,7 @@ const paths: Record<string, React.ReactNode> = {
 export default function SocialIcon({ name, className }: IconProps) {
   return (
     <svg
-      viewBox="0 0 24 24"
+      viewBox="0 0 24"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
