@@ -24,6 +24,7 @@ export const site = {
     instagram: "https://www.instagram.com/jk.trans.trade?rpxt=cGtsNGkyczM1MHJ4&utm_source=qr", // [PLACEHOLDER]
     linkedin: "#", // [PLACEHOLDER]
     x: "#", // [PLACEHOLDER]
+    youtube: "#", // [PLACEHOLDER]
   },
 
   nav: [

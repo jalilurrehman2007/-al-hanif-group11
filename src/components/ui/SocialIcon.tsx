@@ -18,13 +18,18 @@ const paths: Record<string, React.ReactNode> = {
     </>
   ),
   x: <path d="M4 4l16 16M20 4L4 20" />,
-
+  youtube: (
+    <>
+      <rect x="3" y="6" width="18" height="12" rx="3" />
+      <path d="M10.5 9.5v5l4.5-2.5z" fill="currentColor" stroke="none" />
+    </>
+  ),
 };
 
 export default function SocialIcon({ name, className }: IconProps) {
   return (
     <svg
-      viewBox="0 0 24"
+      viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
