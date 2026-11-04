@@ -5,7 +5,7 @@
 
 export const site = {
   name: "Alhanif Group",
-  legalName: "Alhanif Group (formerly Khalil Hanif Impex)",
+  legalName: "Alhanif Group (formerly Khalil Hanif Impex,jktranstrade)",
   tagline: "Four Generations of Logistics",
   foundedYear: "1971",
   domain: "https://www.alhanifgroup.com", // [PLACEHOLDER] set once you have a real domain
