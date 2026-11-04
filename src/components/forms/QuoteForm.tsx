@@ -103,7 +103,7 @@ export default function QuoteForm({ dark = false }: { dark?: boolean }) {
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="space-y-1.5">
           <label htmlFor="phone" className={labelClass}>Phone</label>
-          <input id="phone" name="phone" type="tel" className={fieldClass} placeholder="+92 ..." />
+          <input id="phone" name="phone" type="tel" className={fieldClass} placeholder="" />
         </div>
         <div className="space-y-1.5">
           <label htmlFor="service" className={labelClass}>Service needed</label>
