@@ -12,7 +12,7 @@ export default function ProcessTimeline() {
       <div className="container-page">
         <SectionHeading
           eyebrow="How It Works"
-          title="A shipment's route, in four stages"
+          title="A shipment's route, in three stages"
           description="The same sequence applies whether cargo moves by air, sea, or road."
         />
 
